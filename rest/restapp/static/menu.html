@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="logo">
+        <img src="Fusion feast logo.jpg" width="50" height="50" alt="FUSION FEAST Logo">
+    </div>
+    <title>FUSION FEAST - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .menu-container {
+            padding: 40px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .menu-details {
+            padding: 15px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .menu-details p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #e74c3c;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ecf0f1;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FUSION FEAST</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="admin.html">Admin</a>
+            <a href="contact.html">Contact us</a>
+            
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <h1>OUR MENU</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="Baby corn salt pepper.jpg" alt="Baby corn salt pepper">
+                <div class="menu-details">
+                    <h3>Baby corn salt pepper</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Veg momos.jpg" alt="Veg momos">
+                <div class="menu-details">
+                    <h3>Veg momos</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Aloo tikki.jpg" alt="Aloo tikki">
+                <div class="menu-details">
+                    <h3>Aloo tikki</h3>
+                    <p class="price">₹120/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Prawn fry.jpg" alt="Prawn fry">
+                <div class="menu-details">
+                    <h3>Prawn fry</h3>
+                    <p class="price">₹180/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Fish fry.jpg" alt="Fish fry">
+                <div class="menu-details">
+                    <h3>Fish fry</h3>
+                    <p class="price">₹150/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Tandoori chicken.jpg" alt="Tandoori chicken">
+                <div class="menu-details">
+                    <h3>Tandoori chicken</h3>
+                    <p class="price">₹200/-</p>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="South indian meals.jpg" alt="South indian meals">
+                <div class="menu-details">
+                    <h3>South indian meals</h3>
+                    <p class="price">₹200/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Avakai annam.jpg" alt="Avakai annam">
+                <div class="menu-details">
+                    <h3>Avakai annam</h3>
+                    <p class="price">₹150/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Veg biriyani.jpg" alt="Veg biriyani">
+                <div class="menu-details">
+                    <h3>Veg biriyani</h3>
+                    <p class="price">₹200/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Curd rice.jpg" alt="Curd rice">
+                <div class="menu-details">
+                    <h3>Curd rice</h3>
+                    <p class="price">₹80/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Avakai chicken biriyani.jpg" alt="Avakai chicken biriyani">
+                <div class="menu-details">
+                    <h3>Avakai chicken biriyani</h3>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Mutton biriyani.jpg" alt="Mutton biriyani">
+                <div class="menu-details">
+                    <h3>Mutton biriyani</h3>
+                    <p class="price">₹350/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Prawn biriyani.jpg" alt="Prawn biriyani">
+                <div class="menu-details">
+                    <h3>Prawn biriyani</h3>
+                    <p class="price">₹350/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Ragi sangati-natukodi .jpg" alt="Ragi sangati-natukodi">
+                <div class="menu-details">
+                    <h3>Ragi sangati-natukodi</h3>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Oreo milkshake.jpg" alt="Oreo milkshake">
+                <div class="menu-details">
+                    <h3>Oreo milkshake</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Chocolate milkshake.jpg" alt="Chocolate milkshake">
+                <div class="menu-details">
+                    <h3>Chocolate milkshake</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Ferrero rocher shake.jpg" alt="Ferrero rocher shake">
+                <div class="menu-details">
+                    <h3>Ferrero rocher shake</h3>
+                    <p class="price">₹150/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Dry fruit shake.jpg" alt="Dry fruit shake">
+                <div class="menu-details">
+                    <h3>Dry fruit shake</h3>
+                    <p class="price">₹150/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Mint cooler.jpg" alt="Mint cooler">
+                <div class="menu-details">
+                    <h3>Mint cooler</h3>
+                    <p class="price">₹80/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Ultra lime.jpg" alt="Ultra lime">
+                <div class="menu-details">
+                    <h3>Ultra lime</h3>
+                    <p class="price">₹80/-</p>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="Hot chocolate.jpg" alt="Hot chocolate">
+                <div class="menu-details">
+                    <h3>Hot chocolate</h3>
+                    <p class="price">₹100/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="cappuccino.jpg" alt="cappuccino">
+                <div class="menu-details">
+                    <h3>cappuccino</h3>
+                    <p class="price">₹120/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Irani chai.jpg" alt="Irani chai">
+                <div class="menu-details">
+                    <h3>Irani chai</h3>
+                    <p class="price">₹50/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Cold coffee.jpg" alt="Cold coffee">
+                <div class="menu-details">
+                    <h3>Cold coffee</h3>
+                    <p class="price">₹90/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Falooda.jpg" alt="Falooda">
+                <div class="menu-details">
+                    <h3>Falooda</h3>
+                    <p class="price">₹75/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Badam milk.jpg" alt="Badam milk">
+                <div class="menu-details">
+                    <h3>Badam milk</h3>
+                    <p class="price">₹50/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Sizzling brownie.jpg" alt="Sizzling brownie">
+                <div class="menu-details">
+                    <h3>Sizzling brownie</h3>
+                    <p class="price">₹150/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Rasmalai.jpg" alt="Rasmalai">
+                <div class="menu-details">
+                    <h3>Rasmalai</h3>
+                    <p class="price">₹80/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Gulab jamun.jpg" alt="Gulab jamun">
+                <div class="menu-details">
+                    <h3>Gulab jamun</h3>
+                    <p class="price">₹50/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Kheer.jpg" alt="Kheer">
+                <div class="menu-details">
+                    <h3>Kheer</h3>
+                    <p class="price">₹85/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Junnu.jpg" alt="Junnu">
+                <div class="menu-details">
+                    <h3>Junnu</h3>
+                    <p class="price">₹65/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="Ice cream .jpg" alt="Ice cream">
+                <div class="menu-details">
+                    <h3>Ice cream</h3>
+                    <p class="price">₹70/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+            
+        <p align="center" class="copy">&copy; Copyright Fusion feast</p>
+
+    <h3 align="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-style: italic; ">
+        Developed and designed by Raju D</h3>
+</footer>
+</center>
+<div class="logo">
+<img src="Fusion feast logo.jpg" width="50" height="50" class="footer" alt="Fusion feast Logo">
+</div>
+
+
+</body>
+</html>
